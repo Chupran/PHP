@@ -1,0 +1,19 @@
+body{
+    background: gray;
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+h1{
+    color: white;
+}
+p{
+    color: red;
+}
+span{
+    background: yellow;
+    margin-top: 5px;
+}
+form{
+    padding-bottom: 5px;
+}
