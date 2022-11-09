@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<h1>Zadanie</h1>
+<p>Podaj dwie liczby i wybierz działanie:</p>
+<label for="liczba-1">Podaj pierwszą liczbę</label>
+<input type="text" id="liczba-1">
+<label for="liczba-2">Podaj liczbę drugą</label>
+<input type="text" id="liczba-2">
+<fieldset>
+  <legend>Wybierz działanie</legend>
+  <label for="mnozenie">*</label>
+  <input type="radio" name="dzialanie" class="dzialanie" id="mnozenie" checked>
+  <label for="dzielenie">/</label>
+  <input type="radio" name="dzialanie" class="dzialanie" id="dzielenie">
+</fieldset>
+<button id="button">Oblicz</button>
+<p id="wynik">...</p>
+
+<script>
+  const liczba_1 = document.querySelector("#liczba-1");
+  const liczba_2 = document.querySelector("#liczba-2");
+  const dzialanie = document.querySelectorAll(".dzialanie");
+  const btn = document.getElementById("button");
+  let wynik = document.getElementById("wynik");
+  btn.addEventListener('click', function() {
+    let tmp;
+    if(dzialanie[0].checked===true)
+      tmp = Number(liczba_1.value) * Number(liczba_2.value);
+    else if(dzialanie[1]===true) {
+      tmp = Number(liczba_1.value) / Number(liczba_2.value);
+    }
+    wynik.innerHTML = `Wynik działania to: ${tmp}.`;
+  },false);
+</script>
+// w przypadku dzielenia należy rozwiązać problem dzielneia przez 0
+
+</body>
+</html>

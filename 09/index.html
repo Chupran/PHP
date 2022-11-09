@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Czytanie czeków</title>
+</head>
+<body>
+<fieldset>
+    <legend>Opcje <em>(możesz wybrać kilka)</em></legend>
+    <ul>
+        <li><input type="checkbox" name="warianty[]" value="Błyszczące sznurówki"> Błyszczące sznurówki</li>
+        <li><input type="checkbox" name="warianty[]" value="Metalowe logo" checked> Metalowe logo</li>
+        <li><input type="checkbox" name="warianty[]" value="Świecące podeszwy"> Świecące podeszwy</li>
+        <li><input type="checkbox" name="warianty[]" value="Odtwarzanie MP3"> Odtwarzanie MP3</li>
+        <li><input type="checkbox" name="warianty[]" value="Przełącznik WiFi"> Przełącznik WiFi</li>
+    </ul>
+</fieldset>
+<button>Czytaj</button>
+<p id="wynik">.....</p>
+<script>
+    const wybor = document.querySelectorAll("input");
+    const button = document.querySelector("button");
+    const wynik = document.querySelector("#wynik");
+
+    button.addEventListener('click', function() {
+        let odp="Wybrane opcje to: ";
+        for(let i=0; i<wybor.length; i++) {
+            if(wybor[i].checked) {
+                //console.log(wybor[i].value);
+                odp = odp+"<b>"+wybor[i].value+" </b>";
+            }
+        }
+        wynik.innerHTML = odp;
+    });
+</script>
+</body>

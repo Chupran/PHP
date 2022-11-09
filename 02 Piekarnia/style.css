@@ -1,0 +1,20 @@
+body{
+    background-color: grey;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+#head{
+    width: 100%;
+}
+#zamowienie{
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    height: 50px;
+}
+input{
+    background-color: gray;
+    border: 1px black solid;
+    border-radius: 25%;
+}
