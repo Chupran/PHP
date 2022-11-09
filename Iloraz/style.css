@@ -1,8 +1,14 @@
+@font-face {
+    font-family: Kolker_Brush;
+    src: url("Kolker_Brush/KolkerBrush-Regular.ttf");
+}
 body{
     background: gray;
     text-align: center;
     padding: 5px;
     letter-spacing: 2px;
+    font-family: Kolker_Brush;
+    font-size: 20px;
 }
 h1{
     color: white;
