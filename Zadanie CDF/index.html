@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie CDF</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Zadanie CDF - czytanie danych z formularza i wykonywanie operacji matematycznych. Eryk Czuchran 3pir</h1>
+<p>Zapoznaj się z materiałem lekcji (szczególnie z 5.6 Tworzenie programu) i wykonaj zadanie w którym użytkownik za pomocą formularza wprowadza cztery dane:
+
+    imię (łańcuch znaków) oraz cztery liczby. Skrypt odczytuje te dane i w pliku wynik.php odpowiada "Witaj" z imieniem podanym przez użytkownika "na mojej stronie". Pozostałe wartości zapisuje w tablicy, wyświetla ją (za pomocą var_dump) i po konwersji wypisuje sumę oraz średnią podanych wartości (Nawet jeśli użytkownik zamiast liczb wprowadzi łańcuch znaków. Aby mianownik w średniej był różny od 0 zakładamy, że użytkownik podał przynajmniej jedną liczbę prawidłowo).</p>
+<form method="post" action="wynik.php">
+    <label>
+        Podaj swoje imię:<input type="text" name="imię">
+    </label>
+    <label>
+        Podaj A:<input type="number" name="A">
+    </label>
+    <label>
+        Podaj B:<input type="number" name="B">
+    </label>
+    <label>
+        Podaj C:<input type="number" name="C">
+    </label>
+    <label>
+        Podaj D:<input type="number" name="D">
+    </label>
+    <label>
+        <input type="submit" value="Wyślij!">
+    </label>
+</form>
+</body>
+</html>
