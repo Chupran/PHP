@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Kolker_Brush;
+    src: url("Kolker_Brush/KolkerBrush-Regular.ttf");
+}
+body{
+    font-family: Kolker_Brush;
+    text-align: center;
+    font-size: 25px;
+    background-color: gray;
+    color: red;
+}
+input{
+    border-radius: 25px;
+    background-color: gray;
+    color: red;
+    font-family: Kolker_Brush;
+    font-size: 20px;
+}
+input:current{
+    text-decoration: none;
+    border-style: none;
+}
